@@ -22,15 +22,17 @@ public class pantallaOpcionInvAnfi extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnGrupoRadio = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        btnCrearpartida = new javax.swing.JButton();
+        btnSigueinte = new javax.swing.JButton();
         lblNombre = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        btnAnfiltrion1 = new javax.swing.JButton();
-        btnInvitado1 = new javax.swing.JButton();
         txtNombre = new javax.swing.JTextField();
         imgPatolli2 = new javax.swing.JLabel();
+        btnRadioInvi = new javax.swing.JRadioButton();
+        lblSeleccion = new javax.swing.JLabel();
+        btnRadioAnfi = new javax.swing.JRadioButton();
         imgPatolli = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
@@ -44,21 +46,21 @@ public class pantallaOpcionInvAnfi extends javax.swing.JFrame {
         jLabel2.setText("PATOLLI");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 50, -1, -1));
 
-        btnCrearpartida.setBackground(new java.awt.Color(0, 153, 255));
-        btnCrearpartida.setFont(new java.awt.Font("Arial Black", 3, 12)); // NOI18N
-        btnCrearpartida.setForeground(new java.awt.Color(255, 255, 255));
-        btnCrearpartida.setText("Crear  Partida");
-        btnCrearpartida.addMouseListener(new java.awt.event.MouseAdapter() {
+        btnSigueinte.setBackground(new java.awt.Color(0, 153, 255));
+        btnSigueinte.setFont(new java.awt.Font("Arial Black", 3, 12)); // NOI18N
+        btnSigueinte.setForeground(new java.awt.Color(255, 255, 255));
+        btnSigueinte.setText("Siguiente");
+        btnSigueinte.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnCrearpartidaMouseClicked(evt);
+                btnSigueinteMouseClicked(evt);
             }
         });
-        btnCrearpartida.addActionListener(new java.awt.event.ActionListener() {
+        btnSigueinte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearpartidaActionPerformed(evt);
+                btnSigueinteActionPerformed(evt);
             }
         });
-        jPanel1.add(btnCrearpartida, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 140, -1));
+        jPanel1.add(btnSigueinte, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 290, 140, -1));
 
         lblNombre.setFont(new java.awt.Font("Arial Black", 3, 14)); // NOI18N
         lblNombre.setText("Nombre ");
@@ -68,42 +70,36 @@ public class pantallaOpcionInvAnfi extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("*");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 240, -1, -1));
-
-        btnAnfiltrion1.setBackground(new java.awt.Color(0, 153, 255));
-        btnAnfiltrion1.setFont(new java.awt.Font("Arial Black", 3, 12)); // NOI18N
-        btnAnfiltrion1.setForeground(new java.awt.Color(255, 255, 255));
-        btnAnfiltrion1.setText("Anfiltrión");
-        btnAnfiltrion1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnAnfiltrion1MouseClicked(evt);
-            }
-        });
-        btnAnfiltrion1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAnfiltrion1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnAnfiltrion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, 120, -1));
-
-        btnInvitado1.setBackground(new java.awt.Color(0, 153, 255));
-        btnInvitado1.setFont(new java.awt.Font("Arial Black", 3, 12)); // NOI18N
-        btnInvitado1.setForeground(new java.awt.Color(255, 255, 255));
-        btnInvitado1.setText("Invitado");
-        btnInvitado1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnInvitado1MouseClicked(evt);
-            }
-        });
-        btnInvitado1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInvitado1ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(btnInvitado1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 120, -1));
         jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 240, 190, -1));
 
         imgPatolli2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1patolli.png"))); // NOI18N
         jPanel1.add(imgPatolli2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 20, 90, 80));
+
+        btnRadioInvi.setBackground(new java.awt.Color(0, 153, 255));
+        btnGrupoRadio.add(btnRadioInvi);
+        btnRadioInvi.setFont(new java.awt.Font("Arial Black", 3, 12)); // NOI18N
+        btnRadioInvi.setText("Invitado");
+        btnRadioInvi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRadioInviActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnRadioInvi, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, -1, -1));
+
+        lblSeleccion.setFont(new java.awt.Font("Arial Black", 3, 24)); // NOI18N
+        lblSeleccion.setText("Seleccione una opción");
+        jPanel1.add(lblSeleccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 130, 340, -1));
+
+        btnRadioAnfi.setBackground(new java.awt.Color(0, 153, 255));
+        btnGrupoRadio.add(btnRadioAnfi);
+        btnRadioAnfi.setFont(new java.awt.Font("Arial Black", 3, 12)); // NOI18N
+        btnRadioAnfi.setText("Anfiltrión");
+        btnRadioAnfi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRadioAnfiActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnRadioAnfi, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, -1, -1));
 
         imgPatolli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/1patolli.png"))); // NOI18N
         jPanel1.add(imgPatolli, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 90, 80));
@@ -125,35 +121,29 @@ public class pantallaOpcionInvAnfi extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnCrearpartidaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearpartidaActionPerformed
+    private void btnSigueinteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSigueinteActionPerformed
       
-    }//GEN-LAST:event_btnCrearpartidaActionPerformed
+    }//GEN-LAST:event_btnSigueinteActionPerformed
 
-    private void btnAnfiltrion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnfiltrion1ActionPerformed
+    private void btnSigueinteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnSigueinteMouseClicked
+         if (btnRadioAnfi.isSelected()) {
+            pantallaCrearPartida config = new pantallaCrearPartida();
+            config.setVisible(true);
+            this.dispose();
+        } else if (btnRadioInvi.isSelected()) {
+            pantallaCodigo codigo = new pantallaCodigo();
+            codigo.setVisible(true);
+            this.dispose();
+        }
+    }//GEN-LAST:event_btnSigueinteMouseClicked
+
+    private void btnRadioInviActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRadioInviActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnAnfiltrion1ActionPerformed
+    }//GEN-LAST:event_btnRadioInviActionPerformed
 
-    private void btnInvitado1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInvitado1ActionPerformed
+    private void btnRadioAnfiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRadioAnfiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnInvitado1ActionPerformed
-
-    private void btnAnfiltrion1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAnfiltrion1MouseClicked
-        pantallaCrearPartida config = new pantallaCrearPartida();
-        config.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnAnfiltrion1MouseClicked
-
-    private void btnInvitado1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInvitado1MouseClicked
-        pantallaCodigo codigo = new pantallaCodigo();
-        codigo.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnInvitado1MouseClicked
-
-    private void btnCrearpartidaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCrearpartidaMouseClicked
-        pantallaTableroEspera tablero = new pantallaTableroEspera();
-        tablero.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_btnCrearpartidaMouseClicked
+    }//GEN-LAST:event_btnRadioAnfiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -193,15 +183,17 @@ public class pantallaOpcionInvAnfi extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondo;
-    private javax.swing.JButton btnAnfiltrion1;
-    private javax.swing.JButton btnCrearpartida;
-    private javax.swing.JButton btnInvitado1;
+    private javax.swing.ButtonGroup btnGrupoRadio;
+    private javax.swing.JRadioButton btnRadioAnfi;
+    private javax.swing.JRadioButton btnRadioInvi;
+    private javax.swing.JButton btnSigueinte;
     private javax.swing.JLabel imgPatolli;
     private javax.swing.JLabel imgPatolli2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel lblNombre;
+    private javax.swing.JLabel lblSeleccion;
     private javax.swing.JTextField txtNombre;
     // End of variables declaration//GEN-END:variables
 }
